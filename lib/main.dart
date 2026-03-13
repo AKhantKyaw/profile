@@ -446,7 +446,7 @@ class SkillsSection extends StatelessWidget {
               skills: ['Firebase', 'REST API', 'Authentication', 'Cloud Integration'],
             ),
             SkillGroup(
-              title: 'State Management / Architecture',
+              title: 'State Management \n Architecture',
               icon: Icons.account_tree,
               skills: ['Provider', 'Riverpod', 'Clean Architecture', 'MVVM'],
             ),
