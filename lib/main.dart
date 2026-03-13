@@ -389,11 +389,19 @@ class ProfileImage extends StatelessWidget {
           colors: [Color(0xFFE9EEF9), Color(0xFFD5DFF5)],
         ),
         border: Border.all(color: AppColors.border),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x22000000),
+            blurRadius: 18,
+            offset: Offset(0, 8),
+          ),
+        ],
       ),
-      child: const Center(
-        child: Text(
-          'Profile Image',
-          style: TextStyle(color: AppColors.muted, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.all(6),
+      child: ClipOval(
+        child: Image.asset(
+          'assets/images/profile.jpg',
+          fit: BoxFit.cover,
         ),
       ),
     );
